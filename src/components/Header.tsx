@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Email: info@skilldrivepro.com</span>
+              <span>Email: info@opddriving.com</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -37,10 +37,10 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-primary">
-              SkillDrive<span className="text-secondary">Pro</span>
+              OPD <span className="text-secondary">DRIVING SCHOOL</span>
             </h1>
             <span className="ml-3 text-sm text-muted-foreground">
-              DRIVING SCHOOL
+              Professional Driver Training
             </span>
           </div>
 

@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Company info */}
           <div>
             <h4 className="text-2xl font-bold mb-4">
-              SkillDrive<span className="text-secondary">Pro</span>
+              OPD <span className="text-secondary">DRIVING SCHOOL</span>
             </h4>
             <p className="text-primary-foreground/80 mb-4">
               Ministry-Approved BDE Course Provider serving the Greater Toronto Area 
@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@skilldrivepro.com</span>
+                <span>info@opddriving.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
@@ -100,7 +100,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/20 py-6">
         <div className="container mx-auto px-4 text-center text-primary-foreground/60">
-          <p>&copy; 2024 SkillDrivePro Driving School. All rights reserved. | MTO Approved Course Provider</p>
+          <p>&copy; 2024 OPD Driving School. All rights reserved. | MTO Approved Course Provider</p>
         </div>
       </div>
     </footer>
