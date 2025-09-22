@@ -35,7 +35,7 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-muted/30">
+    <section className="py-20 px-4 bg-muted/50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-foreground">
@@ -48,12 +48,12 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-0 shadow-md">
+            <Card key={index} className="hover:shadow-[var(--shadow-medium)] transition-all duration-300 border-l-4 border-l-primary bg-card shadow-[var(--shadow-soft)] hover:translate-y-[-2px]">
               <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+                <div className="mx-auto mb-4 p-3 bg-accent rounded-full w-fit">
                   <service.icon className="w-8 h-8 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold text-foreground">
+                <CardTitle className="text-xl font-bold text-card-foreground">
                   {service.title}
                 </CardTitle>
                 <CardDescription className="text-muted-foreground">
@@ -70,7 +70,7 @@ const Services = () => {
                   ))}
                 </ul>
                 <Button 
-                  className="w-full bg-primary hover:bg-primary/90" 
+                  className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300" 
                   size="lg"
                 >
                   {service.buttonText}

@@ -3,42 +3,42 @@ import { Car, CheckCircle, Users } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-20 px-4 overflow-hidden">
+    <section className="relative py-24 px-4 bg-[var(--gradient-background)] overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 rotate-12">
-          <Car className="w-32 h-32" />
+          <Car className="w-32 h-32 text-primary/20" />
         </div>
         <div className="absolute bottom-10 right-20 -rotate-12">
-          <Car className="w-24 h-24" />
+          <Car className="w-24 h-24 text-primary/15" />
         </div>
       </div>
 
       <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            #1 Driving School in
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight text-foreground">
+            Learn to Drive with
             <br />
-            <span className="text-secondary">Greater Toronto Area</span>
+            <span className="text-primary">Confidence & Style</span>
           </h1>
 
-          <p className="text-xl mb-8 opacity-90">
-            MTO-Approved Beginner Driver Education Course Provider
+          <p className="text-xl mb-8 text-muted-foreground">
+            Professional driving lessons with certified instructors
             <br />
-            Professional instructors with 98% passing rate
+            Get your license fast and safe with OPD driving school
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-6 text-lg font-semibold"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-glow)] transition-all duration-300"
             >
               REGISTER NOW
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg font-semibold"
+              className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground px-8 py-6 text-lg font-semibold transition-all duration-300"
             >
               CHECK CERTIFICATION
             </Button>
@@ -46,20 +46,20 @@ const Hero = () => {
 
           {/* Trust indicators */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="flex flex-col items-center">
-              <CheckCircle className="w-12 h-12 mb-4 text-secondary" />
-              <h3 className="text-2xl font-bold mb-2">98%</h3>
-              <p className="text-lg opacity-90">Passing Rate</p>
+            <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
+              <CheckCircle className="w-12 h-12 mb-4 text-primary" />
+              <h3 className="text-2xl font-bold mb-2 text-foreground">98%</h3>
+              <p className="text-lg text-muted-foreground">Passing Rate</p>
             </div>
-            <div className="flex flex-col items-center">
-              <Users className="w-12 h-12 mb-4 text-secondary" />
-              <h3 className="text-2xl font-bold mb-2">15,000+</h3>
-              <p className="text-lg opacity-90">Students Trained</p>
+            <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
+              <Users className="w-12 h-12 mb-4 text-primary" />
+              <h3 className="text-2xl font-bold mb-2 text-foreground">15,000+</h3>
+              <p className="text-lg text-muted-foreground">Students Trained</p>
             </div>
-            <div className="flex flex-col items-center">
-              <Car className="w-12 h-12 mb-4 text-secondary" />
-              <h3 className="text-2xl font-bold mb-2">25+</h3>
-              <p className="text-lg opacity-90">Years Experience</p>
+            <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
+              <Car className="w-12 h-12 mb-4 text-primary" />
+              <h3 className="text-2xl font-bold mb-2 text-foreground">25+</h3>
+              <p className="text-lg text-muted-foreground">Years Experience</p>
             </div>
           </div>
         </div>

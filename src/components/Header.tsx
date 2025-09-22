@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="w-full">
       {/* Top bar with contact info */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
+      <div className="bg-foreground text-background py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
@@ -33,7 +33,7 @@ const Header = () => {
       </div>
 
       {/* Main navigation */}
-      <nav className="bg-white shadow-md py-4 px-4">
+      <nav className="bg-background shadow-[var(--shadow-soft)] py-4 px-4 border-b border-border">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-primary">
@@ -56,7 +56,7 @@ const Header = () => {
             ))}
           </div>
 
-          <Button variant="default" size="lg" className="bg-secondary hover:bg-secondary/90">
+          <Button variant="default" size="lg" className="bg-secondary hover:bg-secondary/90 text-secondary-foreground shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-medium)] transition-all duration-300">
             REGISTER ONLINE
           </Button>
         </div>
