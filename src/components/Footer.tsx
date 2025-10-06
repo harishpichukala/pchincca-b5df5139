@@ -1,10 +1,10 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Footer = () => {
-  const locations = [
-    "Barrie", "Brampton", "Cambridge", "Markham", "Milton", "Mississauga",
-    "Newmarket", "North York", "Richmond Hill", "Scarborough", "Toronto", 
-    "Vaughan", "Yonge-Eglinton"
+  const technologies = [
+    "React", "Node.js", "Python", "TypeScript", "AWS", "Azure",
+    "Docker", "Kubernetes", "MongoDB", "PostgreSQL", "GraphQL", 
+    "Next.js", "Vue.js"
   ];
 
   return (
@@ -12,14 +12,14 @@ const Footer = () => {
       {/* Location badges */}
       <div className="border-b border-primary-foreground/20">
         <div className="container mx-auto py-8 px-4">
-          <h3 className="text-xl font-semibold text-center mb-6">Our Service Locations</h3>
+          <h3 className="text-xl font-semibold text-center mb-6">Technologies We Work With</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {locations.map((location) => (
+            {technologies.map((tech) => (
               <span 
-                key={location} 
+                key={tech} 
                 className="bg-white/10 px-3 py-2 rounded-full text-sm font-medium hover:bg-white/20 transition-colors cursor-pointer"
               >
-                {location}
+                {tech}
               </span>
             ))}
           </div>
@@ -32,14 +32,14 @@ const Footer = () => {
           {/* Company info */}
           <div>
             <h4 className="text-2xl font-bold mb-4">
-              OPD <span className="text-secondary">DRIVING SCHOOL</span>
+              Tech<span className="text-secondary">Solutions</span>
             </h4>
             <p className="text-primary-foreground/80 mb-4">
-              Ministry-Approved BDE Course Provider serving the Greater Toronto Area 
-              with professional driving instruction since 1998.
+              Leading IT consulting and development firm delivering innovative digital solutions 
+              that drive business growth and transformation.
             </p>
             <p className="text-sm text-primary-foreground/60">
-              "We Strive for Better" - Your success is our commitment.
+              "Innovation Through Technology" - Your digital success partner.
             </p>
           </div>
 
@@ -49,15 +49,15 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>(416) 555-DRIVE</span>
+                <span>(555) 123-4567</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@opddriving.com</span>
+                <span>info@itconsulting.com</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>Multiple locations across GTA<br />See locations above</span>
+                <span>Serving clients worldwide<br />Remote & on-site available</span>
               </div>
             </div>
           </div>
@@ -66,13 +66,13 @@ const Footer = () => {
           <div>
             <h5 className="text-lg font-semibold mb-4">Our Services</h5>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li>• G1 Exit to G2 Courses</li>
-              <li>• G2 Exit to G Courses</li>
-              <li>• E-Learning Classes</li>
-              <li>• In-Car Lessons</li>
-              <li>• Vehicle for Hire (PTC)</li>
-              <li>• Senior Driver Courses</li>
-              <li>• New Immigrant Courses</li>
+              <li>• Website Development</li>
+              <li>• Web Hosting</li>
+              <li>• Automation Services</li>
+              <li>• AI Tools & Integration</li>
+              <li>• Desktop Applications</li>
+              <li>• Mobile App Development</li>
+              <li>• IT Consulting</li>
             </ul>
           </div>
 
@@ -90,8 +90,8 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-6 p-4 bg-secondary/20 rounded-lg">
-              <p className="text-sm font-semibold text-secondary">We book your road test for FREE!</p>
-              <p className="text-xs text-primary-foreground/70">Call us to schedule your test</p>
+              <p className="text-sm font-semibold text-secondary">Free Consultation Available!</p>
+              <p className="text-xs text-primary-foreground/70">Contact us for a project quote</p>
             </div>
           </div>
         </div>
@@ -100,7 +100,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/20 py-6">
         <div className="container mx-auto px-4 text-center text-primary-foreground/60">
-          <p>&copy; 2024 OPD Driving School. All rights reserved. | MTO Approved Course Provider</p>
+          <p>&copy; 2024 TechSolutions. All rights reserved. | IT Consulting & Services</p>
         </div>
       </div>
     </footer>

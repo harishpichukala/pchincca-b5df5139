@@ -1,69 +1,56 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Medal, Award, CheckCircle } from "lucide-react";
+import { Shield, Zap, Users, Award } from "lucide-react";
 
 const Certification = () => {
+  const features = [
+    {
+      icon: Shield,
+      title: "Secure & Reliable",
+      description: "Enterprise-grade security and 99.9% uptime guarantee for all our solutions"
+    },
+    {
+      icon: Zap,
+      title: "Fast Delivery",
+      description: "Agile development process ensures quick turnaround without compromising quality"
+    },
+    {
+      icon: Users,
+      title: "Expert Team",
+      description: "Seasoned professionals with expertise across all modern tech stacks"
+    },
+    {
+      icon: Award,
+      title: "Proven Results",
+      description: "Track record of successful projects delivering measurable business value"
+    }
+  ];
+
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-background">
       <div className="container mx-auto">
-        <div className="max-w-4xl mx-auto">
-          {/* Certification info */}
-          <div>
-            <h2 className="text-4xl font-bold mb-6 text-foreground text-center">
-              A Driving School You Can <span className="text-primary">Rely On</span>
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card className="border-l-4 border-l-primary shadow-lg">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-2">
-                  <Medal className="w-8 h-8 text-primary mr-4" />
-                  <div>
-                    <CardTitle className="text-xl">MTO Certified</CardTitle>
-                    <CardDescription>Ministry of Transportation Approved</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Our school is fully certified by the Ministry of Transportation Ontario, ensuring 
-                    you receive quality education that meets all official requirements.
-                  </p>
-                </CardContent>
-              </Card>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold mb-4 text-foreground">
+            Why Choose <span className="text-primary">TechSolutions</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Your trusted partner in digital transformation with industry-leading expertise
+          </p>
+        </div>
 
-              <Card className="border-l-4 border-l-secondary shadow-lg">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-2">
-                  <Award className="w-8 h-8 text-secondary mr-4" />
-                  <div>
-                    <CardTitle className="text-xl">Expert Instructors</CardTitle>
-                    <CardDescription>Experienced & Professional</CardDescription>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">
-                    Our certified driving instructors provide industry-leading techniques with 
-                    personalized attention to ensure your success.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 flex items-center gap-2"
-              >
-                <CheckCircle className="w-5 h-5" />
-                Check Certification
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white"
-              >
-                Learn to Drive Today
-              </Button>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <Card key={index} className="text-center hover:shadow-[var(--shadow-medium)] transition-all duration-300 bg-card border-border shadow-[var(--shadow-soft)]">
+              <CardHeader>
+                <div className="mx-auto mb-4 p-4 bg-accent rounded-full w-fit">
+                  <feature.icon className="w-8 h-8 text-primary" />
+                </div>
+                <CardTitle className="text-xl text-card-foreground">{feature.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-muted-foreground">{feature.description}</CardDescription>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>
