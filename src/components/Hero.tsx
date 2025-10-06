@@ -48,12 +48,12 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
               <CheckCircle className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="text-2xl font-bold mb-2 text-foreground">500+</h3>
+              <h3 className="text-2xl font-bold mb-2 text-foreground">40+</h3>
               <p className="text-lg text-muted-foreground">Projects Delivered</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
               <Users className="w-12 h-12 mb-4 text-primary" />
-              <h3 className="text-2xl font-bold mb-2 text-foreground">200+</h3>
+              <h3 className="text-2xl font-bold mb-2 text-foreground">10+</h3>
               <p className="text-lg text-muted-foreground">Happy Clients</p>
             </div>
             <div className="flex flex-col items-center p-6 bg-card/80 backdrop-blur-sm rounded-xl border border-border shadow-[var(--shadow-soft)]">
