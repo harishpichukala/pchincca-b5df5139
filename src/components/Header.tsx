@@ -18,11 +18,11 @@ const Header = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>Phone: (555) 123-4567</span>
+              <span>Phone: (647) 555-8900</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Email: info@itconsulting.com</span>
+              <span>Email: info@pchinc.ca</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -36,7 +36,7 @@ const Header = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold text-primary">
-              Tech<span className="text-secondary">Solutions</span>
+              PCH <span className="text-secondary">Consulting Services INC</span>
             </h1>
             <span className="ml-3 text-sm text-muted-foreground">
               IT Consulting & Services

@@ -32,7 +32,7 @@ const Footer = () => {
           {/* Company info */}
           <div>
             <h4 className="text-2xl font-bold mb-4">
-              Tech<span className="text-secondary">Solutions</span>
+              PCH <span className="text-secondary">Consulting Services INC</span>
             </h4>
             <p className="text-primary-foreground/80 mb-4">
               Leading IT consulting and development firm delivering innovative digital solutions 
@@ -49,11 +49,11 @@ const Footer = () => {
             <div className="space-y-3 text-primary-foreground/80">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>(555) 123-4567</span>
+                <span>(647) 555-8900</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>info@itconsulting.com</span>
+                <span>info@pchinc.ca</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
@@ -100,7 +100,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-primary-foreground/20 py-6">
         <div className="container mx-auto px-4 text-center text-primary-foreground/60">
-          <p>&copy; 2024 TechSolutions. All rights reserved. | IT Consulting & Services</p>
+          <p>&copy; 2024 PCH Consulting Services INC. All rights reserved. | IT Consulting & Services</p>
         </div>
       </div>
     </footer>
